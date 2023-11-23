@@ -19,10 +19,10 @@ const getPicked = (value) => {
 <template>
   <div class="container my-3">
     <div class="row">
-      <div class="col-9 border-end">
+      <div class="col-12 col-md-9 border-end">
         <Raffle :lists="lists" @picked="getPicked" />
       </div>
-      <div class="col-3 border-start">
+      <div class="col-12 col-md-3 border-start">
         <RaffleList @getList="getLists" :picked="picked" />
       </div>
     </div>
