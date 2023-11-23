@@ -4,9 +4,9 @@
 
 A web based online shuffle for Party and any other events using Fisher-Yates Shuffling Algorithm and [Nuxt 3](https://nuxt.com/).
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
 ## Setup
+
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 Make sure to install the dependencies:
 
