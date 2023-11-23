@@ -9,7 +9,11 @@ const text = ref("")
 const picked = ref("")
 
 const handleShakeAndDraw = () => {
+  if (data.lists === null || data.lists === undefined || data.lists === "") {
 
+    alert("Please provide list of names")
+    return
+  }
   const lists = data.lists.split("\n")
 
   $anime({
@@ -66,7 +70,7 @@ function shuffleList<T>(array: T[]): T[] {
 </script>
 
 <template>
-  <div class="w-100 d-flex justify-content-center flex-column align-items-center">
+  <div class="w-100 d-flex justify-content-center flex-column align-items-center mb-5">
     <img src="/img/box2.png" class="box">
     <p>{{ text }}</p>
     <button type="button" class="btn btn-primary" @click="handleShakeAndDraw">Shake & Draw</button>
@@ -93,7 +97,8 @@ function shuffleList<T>(array: T[]): T[] {
 
 <style scoped>
 .box {
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   height: 450px;
 }
 </style>
