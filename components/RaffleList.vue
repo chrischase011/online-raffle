@@ -21,10 +21,6 @@ watch(() => data.picked, (newPicked) => {
 const handleChange = () => {
   emit('getList', list.value)
 }
-
-
-
-
 </script>
 
 <template>
