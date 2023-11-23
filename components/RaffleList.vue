@@ -29,7 +29,7 @@ const handleChange = () => {
 
 <template>
   <div>
-    <label>Input the names here (1 item per lines)</label><br>
+    <label>Input the names here (1 item per line)</label><br>
     <textarea id="list" class="form-control" rows="15" v-model="list" @change="handleChange"></textarea>
   </div>
 </template>
