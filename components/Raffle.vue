@@ -58,12 +58,9 @@ const handleShakeAndDraw = () => {
     confetti.render()
   }, 2000);
 
-
-
   setTimeout(() => {
     confetti.clear()
-  }, 6500)
-  // text.value = data.lists
+  }, 10000)
 }
 
 const isAWinnerPicked = (value) => {
@@ -85,16 +82,6 @@ function shuffleList<T>(array: T[]): T[] {
   return arr;
 }
 
-const clearConfetti = () => {
-  const confSetting = {
-    target: 'the_confetti',
-    size: 1.8,
-    props: ['circle', 'square', 'triangle', 'line']
-  };
-  const confetti = new ConfettiGenerator(confSetting);
-
-  confetti.clear()
-}
 
 
 
@@ -114,8 +101,7 @@ const clearConfetti = () => {
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">Congratulations</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" @click="clearConfetti"
-            aria-label="Close"></button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <h3>{{ picked }}</h3>
