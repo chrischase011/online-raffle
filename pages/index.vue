@@ -1,7 +1,4 @@
 <script lang="ts" setup>
-useHead({
-  title: "Home"
-})
 
 const lists = ref("")
 const picked = ref("")
