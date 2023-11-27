@@ -3,9 +3,9 @@ const currentYear = new Date().getFullYear();
 </script>
 
 <template>
-  <footer class="position-relative bottom-0">
+  <footer class="bottom-0 position-relative">
     <div class="container">
-      <p class="text-center">All Rights Reserved &copy; {{ currentYear }}</p>
+      <p class="text-center">&copy; {{ currentYear }}</p>
     </div>
   </footer>
 </template>
