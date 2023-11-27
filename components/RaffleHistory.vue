@@ -17,7 +17,7 @@ function resetHistory() {
 
 <template>
   <div>
-    <label>History</label><br>
+    <label class="fw-bold">History</label><br>
     <textarea id="list" class="form-control" rows="10" v-model="history" style="background-color: transparent;"
       readonly></textarea>
     <button type="button" class="my-3 btn btn-sm btn-primary float-end" @click="resetHistory">Reset</button>

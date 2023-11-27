@@ -25,7 +25,7 @@ const handleChange = () => {
 
 <template>
   <div>
-    <label>Input the names here (1 item per line)</label><br>
+    <label class="fw-bold">Input the names here (1 item per line)</label><br>
     <textarea id="list" class="form-control" rows="12" v-model="list" @change="handleChange"
       style="background-color: transparent;"></textarea>
   </div>
