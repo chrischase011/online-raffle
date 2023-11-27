@@ -23,7 +23,14 @@ const getPicked = (value) => {
         <Raffle :lists="lists" @picked="getPicked" />
       </div>
       <div class="col-12 col-md-3 border-start">
-        <RaffleList @getList="getLists" :picked="picked" />
+        <div class="row">
+          <div class="col-12">
+            <RaffleList @getList="getLists" :picked="picked" />
+          </div>
+          <div class="my-3 col-12">
+            <RaffleHistory :picked="picked" />
+          </div>
+        </div>
       </div>
     </div>
   </div>
